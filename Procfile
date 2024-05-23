@@ -2,4 +2,4 @@
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-worker: python main.py
+worker: python start.sh
