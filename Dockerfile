@@ -5,7 +5,7 @@ RUN pip3 install -U pip
 RUN python3 -m pip install --upgrade pip
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
-COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
-CMD ["bash","start.sh"]
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+CMD ["bash", "start.sh"]
